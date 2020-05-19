@@ -63,7 +63,6 @@ public class MyTime{
         t.hour=t.hour+1;
         return t;
     }
-    
     public MyTime previousSecond(MyTime t){
         t.second=t.second-1;
         return t;
@@ -76,7 +75,6 @@ public class MyTime{
         t.minute=t.minute-1;
         return t;
     }
-    
     public static void main(String... args){
         MyTime t = new MyTime(12,12,12);
         System.out.println(t);
@@ -84,6 +82,8 @@ public class MyTime{
         
         System.out.println(t.getTime(t));
         System.out.println(t.nextSecond(t));
+        
+        System.out.println(t.previousHour(t));
         
         
     }
